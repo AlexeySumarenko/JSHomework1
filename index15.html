@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <script>
+    let name = window.prompt("Введите сюда своё имя", 'Введите имя');
+    document.write("Ваше имя" + name + "Очень рады знакомству с Вами!!!");
+    let age = window.prompt("Сколько Вам лет, если не секрет?", '35 лет');
+    let ageFuture = +age.replace(/[^0-9]/g,"") + 10;
+    alert("Через 10 лет Вам исполнится " + ageFuture + " лет!");
+    let repeat = confirm("Начать заново?");
+  </script>
+</body>
+</html>
